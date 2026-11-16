@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Hoping Coffee</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>HOPING COFFEE</h1>
+    <p>Tempat Nyaman untuk Menikmati Kopi</p>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="katalog.html">Menu</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Hubungi Kami</h2>
+        <p>Jangan ragu untuk menghubungi Hoping Coffee.</p>
+
+        <h3>Informasi Kontak</h3>
+        <p><strong>Alamat:</strong> Bangka Belitung</p>
+        <p><strong>Telepon:</strong> 0812-3456-7890</p>
+        <p><strong>Email:</strong> hopingcoffee@gmail.com</p>
+
+        <h3>Media Sosial</h3>
+        <p>Instagram: @hopingcoffee</p>
+        <p>Facebook: Hoping Coffee</p>
+    </section>
+
+    <section>
+        <h2>Formulir Kontak</h2>
+
+        <form action="#" method="post">
+
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama"
+                   required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                   required>
+
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon"
+                   pattern="[0-9]{10,13}"
+                   title="Masukkan 10 sampai 13 digit angka"
+                   required>
+
+            <label for="layanan">Pilihan Layanan:</label>
+            <select id="layanan" name="layanan" required>
+                <option value="">-- Pilih Layanan --</option>
+                <option value="pesan">Pemesanan Kopi</option>
+                <option value="informasi">Informasi Produk</option>
+                <option value="saran">Kritik dan Saran</option>
+            </select>
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan"
+                      minlength="10" maxlength="500"
+                      required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+
+        </form>
+    </section>
+
+    <section>
+        <h2>Lokasi Kami</h2>
+        <p>Temukan lokasi Hoping Coffee di Bangka Belitung.</p>
+
+        <iframe
+            src="https://www.google.com/maps?q=Bangka%20Belitung&output=embed"
+            width="100%"
+            height="300"
+            loading="lazy"
+            title="Peta Bangka Belitung">
+        </iframe>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Hoping Coffee. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>
